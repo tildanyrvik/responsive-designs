@@ -2,6 +2,11 @@
 
 body {
     background-color: black;
+    max-width: 100%;
+    display: flex;
+    flex-direction: column;
+
+
 }
 
 .logo {
@@ -41,3 +46,24 @@ body {
     max-height: 486px;
 }
 
+.navigator {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-sizing: border-box;
+    margin: 50px;
+}
+
+.main-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.image-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
