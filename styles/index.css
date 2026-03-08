@@ -67,3 +67,35 @@ body {
     align-items: center;
     width: 100%;
 }
+
+.burger-icon {
+    color: white;
+    display: none;
+    font-size: 30px;
+}
+
+.small-screen-nav {
+    display: none;
+    position:absolute;
+    width: 100%;
+    background-color: black;
+    padding: 20px;
+}
+
+.small-screen-list {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+@media (max-width: 768px) {
+    .large-screen-nav {
+        display: none;
+    }
+    .burger-icon {
+        display: block;
+    }
+    .small-screen-nav.active {
+        display: flex;
+    }
+}
