@@ -84,8 +84,23 @@ body {
 
 .small-screen-list {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     align-items: center;
+    list-style: none;
+    margin: 0px;
+    padding: 0px;
+    gap: 30px;
+}
+
+.large-screen-nav {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.list-item:hover {
+    background-color: white;
+    color: black;
 }
 
 @media (max-width: 768px) {
