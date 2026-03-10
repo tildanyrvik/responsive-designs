@@ -22,18 +22,18 @@
                         <div class="burger-icon" onclick="burgerMenu()">
                         <i class="fa-solid fa-bars"></i>
                         </div>
-
+            
                         <nav class="small-screen-nav">
                             <ul class="small-screen-list">
-                                <li><a href="link1" class="list-item">Works</a></li>
-                                <li><a href="link2" class="list-item">Services</a></li>
-                                <li><a href="link3" class="list-item">Contacts</a></li>
+                                <li><a href="link1" class="s-list-item">Works</a></li>
+                                <li><a href="link2" class="s-list-item">Services</a></li>
+                                <li><a href="link3" class="s-list-item">Contacts</a></li>
                             </ul>
                         </nav>
                     </div>
 
                         <nav class="large-screen-nav">
-                                <ul>
+                                <ul class="large-screen-list">
                                     <li><a href="link1" class="list-item">Works</a></li>
                                     <li><a href="link2" class="list-item">Services</a></li>
                                     <li><a href="link3" class="list-item">Contacts</a></li>
@@ -56,26 +56,12 @@
         <img src="images/Image.jpg" alt="Mountain in black and white" class="image">
     </div>
 
-    <!--
-    <script>
-    function burgerMenu() {
-        let smallScreenNav = 
-        document.querySelector(".small-screen-nav");
-        smallScreenNav.classList.toggle("active");
 
-         if (navMenu.className === "navigator") {
-
-         navMenu.className += " responsive";
-        } else {
-
-      }
-    }
-</script>
--->
 
 <script>
 function burgerMenu() {
-  var x = document.querySelector(".small-screen-nav");
+  var nav = document.querySelector(".small-screen-nav");
+  nav.classList.toggle("active");
   if (x.style.display === "block") {
     x.style.display = "none";
   } else {
