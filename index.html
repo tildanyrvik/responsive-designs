@@ -15,20 +15,16 @@
     <script src="https://kit.fontawesome.com/a1048a5f6d.js" crossorigin="anonymous"></script>
 
 </head>
-
-<body>
-    
-    <header>
-        <div class="navigator">
+      <div class="navigator">
             <h3 class="logo">Head.</h3>
 
                     <div class="burger-menu">
-                        <div class="burger-icon">
+                        <div class="burger-icon" onclick="burgerMenu()">
                         <i class="fa-solid fa-bars"></i>
                         </div>
 
                         <nav class="small-screen-nav">
-                            <ul>
+                            <ul class="small-screen-list">
                                 <li><a href="link1" class="list-item">Works</a></li>
                                 <li><a href="link2" class="list-item">Services</a></li>
                                 <li><a href="link3" class="list-item">Contacts</a></li>
@@ -45,8 +41,8 @@
                         </nav>
         </div>
     </header>
-
-
+<body>
+    
 
 
         <div class="main-content">
@@ -59,5 +55,34 @@
     <div class="image-container">
         <img src="images/Image.jpg" alt="Mountain in black and white" class="image">
     </div>
+
+    <!--
+    <script>
+    function burgerMenu() {
+        let smallScreenNav = 
+        document.querySelector(".small-screen-nav");
+        smallScreenNav.classList.toggle("active");
+
+         if (navMenu.className === "navigator") {
+
+         navMenu.className += " responsive";
+        } else {
+
+      }
+    }
+</script>
+-->
+
+<script>
+function burgerMenu() {
+  var x = document.querySelector(".small-screen-nav");
+  if (x.style.display === "block") {
+    x.style.display = "none";
+  } else {
+    x.style.display = "block";
+  }
+}
+</script>
+
 </body>
 </html>
